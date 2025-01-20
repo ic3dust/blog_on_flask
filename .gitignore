@@ -1,0 +1,4 @@
+# ignore configs
+config.py
+venv/
+
