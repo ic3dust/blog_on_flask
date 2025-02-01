@@ -7,3 +7,13 @@
 ### 2. Execute: <p style="color:green">chmod +x setup.sh</p>
 
 ### 3. Execute: <p style="color:green">/.setup.sh</p>
+
+# Database commands:
+
+### 1. flask db init
+
+### 2. flask db migrate -m "migrate message"
+
+### 3. flask dp upgrade (to apply the chabges)
+
+> When working with database servers such as MySQL and PostgreSQL, you have to create the database in the database server before running 'flask dp upgrade'.

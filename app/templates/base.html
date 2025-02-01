@@ -12,18 +12,24 @@
     <div>
         My blog:
         <a href="{{url_for('index')}}">Home</a>
+        {% if current_user.is_anonymous %}
         <a href="{{url_for('login')}}">Login</a>
+        {% else %}
+        <a href="{{ url_for('logout') }}">Logout</a>
+        {% endif %}
     </div>
     <hr>
-    {% with messages = get_flashed_messages() %}
-    {% if messages %}
-    <ul>
-        {% for message in messages %}
-        <li>{{ message }}</li>
-        {% endfor %}
-    </ul>
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+<ul>
+    {% for category, message in messages %}
+    {% if category == 'error' %}
+    <li style="color: red;">{{ message }}</li>
     {% endif %}
-    {% endwith %}
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
     {% block content %}{% endblock %}
 </body>
 
