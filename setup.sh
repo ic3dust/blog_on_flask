@@ -73,4 +73,4 @@ echo "Starting Flask server..."
 flask run
 
 # Keep the environment active after Flask stops (optional)
-trap "echo 'Server stopped. You can now use the virtual environment again with 'source venv/bin/activate' and than 'flask run'.'" EXIT
+trap "echo 'Server stopped. You can now use the virtual environment again with 'source venv/bin/activate' and then 'flask run'.'" EXIT

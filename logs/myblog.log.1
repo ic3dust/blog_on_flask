@@ -1,0 +1,120 @@
+2025-02-03 19:59:53,475 INFO: Microblog startup [in /mnt/c/Users/DELL/Desktop/blog_on_flask/app/__init__.py:45]
+2025-02-03 20:02:43,631 INFO: Microblog startup [in /mnt/c/Users/DELL/Desktop/blog_on_flask/app/__init__.py:45]
+2025-02-03 20:02:50,412 ERROR: Exception on /edit_profile [POST] [in /mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/app/routes.py", line 109, in edit_profile
+    if form.validate_on_submit():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/form.py", line 330, in validate
+    return super().validate(extra)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/form.py", line 147, in validate
+    if not field.validate(self, extra):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 234, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 254, in _run_validation_chain
+    validator(form, self)
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/app/forms.py", line 51, in validate_username
+    return redirect(url_for('index'))
+           ^^^^^^^^
+NameError: name 'redirect' is not defined
+2025-02-03 20:03:53,004 INFO: Microblog startup [in /mnt/c/Users/DELL/Desktop/blog_on_flask/app/__init__.py:45]
+2025-02-03 20:04:02,043 ERROR: Exception on /edit_profile [POST] [in /mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/app/routes.py", line 109, in edit_profile
+    if form.validate_on_submit():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/form.py", line 330, in validate
+    return super().validate(extra)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/form.py", line 147, in validate
+    if not field.validate(self, extra):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 234, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 254, in _run_validation_chain
+    validator(form, self)
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/app/forms.py", line 52, in validate_username
+    return redirect(url_for('index'))
+                    ^^^^^^^
+NameError: name 'url_for' is not defined
+2025-02-03 20:05:27,129 INFO: Microblog startup [in /mnt/c/Users/DELL/Desktop/blog_on_flask/app/__init__.py:45]
+2025-02-03 20:05:33,391 ERROR: Exception on /edit_profile [POST] [in /mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py:875]
+Traceback (most recent call last):
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/app/routes.py", line 109, in edit_profile
+    if form.validate_on_submit():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/form.py", line 330, in validate
+    return super().validate(extra)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/form.py", line 147, in validate
+    if not field.validate(self, extra):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 234, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/venv/lib/python3.11/site-packages/wtforms/fields/core.py", line 254, in _run_validation_chain
+    validator(form, self)
+  File "/mnt/c/Users/DELL/Desktop/blog_on_flask/app/forms.py", line 52, in validate_username
+    flash('You already have this name!')
+    ^^^^^
+NameError: name 'flash' is not defined
+2025-02-03 20:06:08,157 INFO: Microblog startup [in /mnt/c/Users/DELL/Desktop/blog_on_flask/app/__init__.py:45]
+2025-02-03 20:19:25,197 INFO: Microblog startup [in /mnt/c/Users/DELL/Desktop/blog_on_flask/app/__init__.py:45]
