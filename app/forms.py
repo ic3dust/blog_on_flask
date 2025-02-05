@@ -52,3 +52,12 @@ class EditProfileForm(FlaskForm):
             User.username == username.data))
         if user is not None:
             raise ValidationError('Please use a different username.')
+        
+#Dealing with forms that flask-wtf adds for follow and unfollow. These two are mutually exclusive, so futrhter we deal with
+#a single solution 
+class EmptyForm(FlaskForm):
+    submit = SubmitField('Submit')
+
+class PostForm(FlaskForm):
+    post = TextAreaField("What's new?", validators=[DataRequired(),Length(min=1,max=140)])
+    submit = SubmitField('Submit')

@@ -77,3 +77,4 @@ Traceback (most recent call last):
 UnboundLocalError: cannot access local variable 'user' where it is not associated with a value
 2025-02-03 20:23:20,053 INFO: Microblog startup [in /mnt/c/Users/DELL/Desktop/blog_on_flask/app/__init__.py:45]
 2025-02-03 20:24:28,170 INFO: Microblog startup [in /mnt/c/Users/DELL/Desktop/blog_on_flask/app/__init__.py:45]
+2025-02-05 18:25:10,178 INFO: Microblog startup [in /mnt/c/Users/DELL/Desktop/blog_on_flask/app/__init__.py:45]
